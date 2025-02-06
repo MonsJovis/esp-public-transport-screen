@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "esp-public-transport-screen",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeshedPaths": ["typings"],
+    "python.analysis.diagnosticSeverityOverrides": {
+      "reportMissingModuleSource": "none"
+    }
+  }
+}
