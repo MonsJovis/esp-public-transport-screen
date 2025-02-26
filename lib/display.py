@@ -47,7 +47,7 @@ def write_to_display(data, timestamp):
     left_offset = 4
 
     lines = [line for stop in data for line in stop['lines']]
-    lines = sorted(lines, key=lambda line: (line['name'] not in ['49', '47A', '52', 'U4'], line['name'] != '49', line['name'] != '47A', line['name'] != '52', line['name'] != 'U4', line['name']))
+    lines = sorted(lines, key=lambda line: (line['name'] not in ['49', 'N49', '46', 'N46', '47A', '52', 'U4'], line['name'] != '49', line['name'] != 'N49', line['name'] != '46', line['name'] != 'N46', line['name'] != '47A', line['name'] != '52', line['name'] != 'U4', line['name']))
 
     for line in lines:
         pos_height = top_offset + line_index * (font_height + 16)
